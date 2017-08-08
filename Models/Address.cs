@@ -1,14 +1,16 @@
 
+using System.Collections.Generic;
+
 namespace Address.Models
 {
 
-public class LetterVariable
-{
-  private string _recipient;
-  private string _sender;
-
-  public string GetRecipient()
+  public class LetterVariable
   {
+    private string _recipient;
+    private string _sender;
+
+    public string GetRecipient()
+    {
     return _recipient;
   }
 
