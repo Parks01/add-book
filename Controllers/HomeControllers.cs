@@ -11,6 +11,14 @@ namespace LetterVariables.Models
         {
           return View("form");
         }
+        [HttpPost("/list")]
+        public ActionResult List()
+        {
+
+          List<Place> allPlaces = Place.GetAll();
+          return View(allPlaces);
+
+        }
 
     }
 

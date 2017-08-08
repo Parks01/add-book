@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <title>Your personalize Address Book</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-  </head>
-  <body>
-    <h1>Fill in your Address</h1>
-    <form action='/List'>
-      <div class='form-group'>
-        <label for='sender'>First Name</label>
-        <input id='sender' name='sender' class='form-control' type='text'>
-      </div>
-      <div class='form-group'>
-        <label for='recipient'>Address</label>
-        <input id='recipient' name='recipient' class='form-control' type='text'>
-      </div>
-      <button type='submit' class='btn'>Submit</button>
+
+@{
+  Layout = "_Layout";
+}
+  <h1>Fill in Your Address</h1>
+  <form action="/List" method="post">
+      <label for="location">Enter Your Address</label>
+      <input type="text" name="fullname" id="fullname">
+      <input type="text" name="address" id="address">
+      <button type="submit" name="button">Submit!</button>
+      <img src="img/book.jpg">
     </form>
-    <img src="img/book.jpg">
-  </body>
-</html>
