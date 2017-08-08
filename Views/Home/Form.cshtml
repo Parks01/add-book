@@ -2,11 +2,12 @@
 @{
   Layout = "_Layout";
 }
-  <h1>Fill in Your Address</h1>
+  <h1>Create Contact</h1>
   <form action="/List" method="post">
       <label for="location">Enter Your Address</label>
-      <input type="text" name="fullname" id="fullname">
-      <input type="text" name="address" id="address">
+      <input type="text" name="name" id="name" placeholder="Full Name">
+      <input type="text" name="number" id="number" placeholder="Phone Number">
+      <input type="text" name="address" id="address" placeholder="Address">
       <button type="submit" name="button">Submit!</button>
       <img src="img/book.jpg">
     </form>

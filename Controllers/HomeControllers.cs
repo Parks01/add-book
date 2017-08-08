@@ -14,9 +14,7 @@ namespace LetterVariables.Models
         [HttpPost("/list")]
         public ActionResult List()
         {
-
-          List<Place> allPlaces = Place.GetAll();
-          return View(allPlaces);
+          return View("List");
 
         }
 
